@@ -238,10 +238,54 @@ PrefabInstance:
       propertyPath: onBButton.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 938094364}
+    - target: {fileID: 1599247513455915841, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669784555563192415, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 168.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3872508827073057531, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 182.1529
+      objectReference: {fileID: 0}
+    - target: {fileID: 3872508827142691394, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 110.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 938094364}
+    - target: {fileID: 4888271393055655443, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315459, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7838701159199260048, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Name
       value: XR Origin
