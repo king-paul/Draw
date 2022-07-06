@@ -210,9 +210,16 @@ MonoBehaviour:
   revolver: {fileID: 0}
   tommahawk: {fileID: 0}
   crosshair: {fileID: 0}
-  fireIndicator: {fileID: 0}
+  ammoValue: {fileID: 0}
   gameManager: {fileID: 0}
+  maxShots: 6
+  reloadTime: 3
   fireFromCamera: 1
   showLineRenderer: 0
-  gunShotSound: {fileID: 0}
-  dieSound: {fileID: 0}
+  gunShotSound: {fileID: 8300000, guid: 1139c179e265406409e3fa31b8ab17ed, type: 3}
+  reloadSound: {fileID: 8300000, guid: 168f2e0af8e227c429079ab8f134e8a8, type: 3}
+  ricochetSounds:
+  - {fileID: 8300000, guid: 8a3de3e1f5d72ac4cb77b8d8526a85e0, type: 3}
+  - {fileID: 8300000, guid: 2996df75228a2e84aadd3758e44c106c, type: 3}
+  - {fileID: 8300000, guid: 35444784a7c70324fbed35fbaccda291, type: 3}
+  dieSound: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}

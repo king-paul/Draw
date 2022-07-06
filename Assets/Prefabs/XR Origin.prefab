@@ -1554,7 +1554,7 @@ PrefabInstance:
     - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: dieSound
       value: 
-      objectReference: {fileID: 8300000, guid: 72e8475d994cf8c46827ba31bea62920, type: 3}
+      objectReference: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}
     - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: revolver
       value: 
