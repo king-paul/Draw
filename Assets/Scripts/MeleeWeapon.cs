@@ -10,6 +10,8 @@ public class MeleeWeapon : MonoBehaviour
     GameObject manager;
     GameManager gameManager;
 
+    [SerializeField] Vector3 offsetFromCamera = new Vector3(0, 0, -1);
+
     private void Awake()
     {
         audio = GetComponent<AudioSource>();

@@ -1537,6 +1537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 7838701158216993210}
+  titleMusicLoop: {fileID: 0}
+  playTitleMusic: 0
 --- !u!1 &7838701159691597582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,10 +1585,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7838701158216993215}
     - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: dieSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: revolver
       value: 
       objectReference: {fileID: 7838701158324812622}
@@ -1606,22 +1604,6 @@ PrefabInstance:
       propertyPath: firingPoint
       value: 
       objectReference: {fileID: 8335240213204777264}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: reloadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 168f2e0af8e227c429079ab8f134e8a8, type: 3}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: gunShotSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 1139c179e265406409e3fa31b8ab17ed, type: 3}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: fireFromCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: showLineRenderer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8152012885786784734, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1669,10 +1651,6 @@ PrefabInstance:
     - target: {fileID: 8152012885786784735, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152012885786784735, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e57b940421926264784c9b121edb3967, type: 3}

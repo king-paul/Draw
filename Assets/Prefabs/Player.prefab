@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &8152012885786784734
 Transform:
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8152012885786784735}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -210,12 +210,13 @@ MonoBehaviour:
   revolver: {fileID: 0}
   tommahawk: {fileID: 0}
   crosshair: {fileID: 0}
+  firingPoint: {fileID: 0}
   ammoValue: {fileID: 0}
   gameManager: {fileID: 0}
   maxShots: 6
   reloadTime: 3
-  fireFromCamera: 1
-  showLineRenderer: 0
+  fireFromCamera: 0
+  showLineRenderer: 1
   gunShotSound: {fileID: 8300000, guid: 1139c179e265406409e3fa31b8ab17ed, type: 3}
   reloadSound: {fileID: 8300000, guid: 168f2e0af8e227c429079ab8f134e8a8, type: 3}
   ricochetSounds:
@@ -223,3 +224,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2996df75228a2e84aadd3758e44c106c, type: 3}
   - {fileID: 8300000, guid: 35444784a7c70324fbed35fbaccda291, type: 3}
   dieSound: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}
+  offsetFromCamera: {x: 0, y: -2, z: 0}

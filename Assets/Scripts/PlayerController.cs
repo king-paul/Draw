@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private LineRenderer line;
     private AudioSource audio;
 
-    private Vector3 offset = new Vector3(0, 0, 5);
+    [SerializeField] Vector3 offsetFromCamera = new Vector3(0, 0, 5);
 
     // Start is called before the first frame update
     void Start()
@@ -60,9 +60,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.DrawLine(camera.position, camera.position + camera.forward * 50, Color.blue);
+        //Debug.DrawLine(camera.position, camera.position + camera.forward * 50, Color.blue);                
 
-        //UseMeleeWeapon();          
+        transform.position = new Vector3(camera.transform.position.x + offsetFromCamera.x,
+            offsetFromCamera.y, camera.transform.position.z + offsetFromCamera.z);
     }
 
     public void FireGun()

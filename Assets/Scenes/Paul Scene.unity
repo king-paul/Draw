@@ -258,6 +258,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 938094364}
+    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: offsetFromCamera.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: offsetFromCamera.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4888271393055655443, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 37
@@ -272,6 +280,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315459, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315460, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
@@ -292,7 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7838701159199260048, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Name
