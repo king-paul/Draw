@@ -234,18 +234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2832285379382446221, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2832285379382446221, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2832285379382446221, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 98527915, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: onBButton.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 938094364}
     - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: gameManager
       value: 

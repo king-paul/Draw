@@ -242,7 +242,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 2438757715876879646, guid: 8565c76e56dc0e04e9857fe5d1a1c013, type: 3}
+  m_ModelPrefab: {fileID: 1085516558444204243, guid: 96c17cf9e7a03a540bbc9884f6afd11c, type: 3}
   m_ModelParent: {fileID: 7838701158324812622}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1350,7 +1350,23 @@ MonoBehaviour:
     m_Id: 5d9ad945-8334-4366-94cf-33479bf3850e
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: aaf16272-7b3f-4d9c-890e-e26012f39cf6
+      m_Path: <XRController>{RightHand}/triggerPressed
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Trigger
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 74074cec-7d06-42a1-881d-7adc5a98a66d
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Trigger
+      m_Flags: 0
     m_Flags: 0
   rightPrimary:
     m_Name: Right Primary
@@ -1359,7 +1375,23 @@ MonoBehaviour:
     m_Id: 0d061a60-1bbf-4f2a-966f-1b05b3b45e99
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9bbaf231-7857-4a82-a77b-0360c9898567
+      m_Path: <XRController>{RightHand}/primary
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Primary
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 225abdd1-0dc0-49fc-b27f-4a7cd98239d1
+      m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Primary
+      m_Flags: 0
     m_Flags: 0
   rightSecondary:
     m_Name: Right Secondary
@@ -1368,7 +1400,23 @@ MonoBehaviour:
     m_Id: 6d054cd1-cfc2-4478-8277-c2dfe7f87386
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 3ed3f779-d298-4568-bf80-a9ef5b7285ec
+      m_Path: <XRController>{RightHand}/secondaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Secondary
+      m_Flags: 0
+    - m_Name: 
+      m_Id: c34d7e46-0614-4c96-9af4-e4e4919d9ece
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right Secondary
+      m_Flags: 0
     m_Flags: 0
   leftTrigger:
     m_Name: Left Trigger
@@ -1377,7 +1425,23 @@ MonoBehaviour:
     m_Id: e69ebc29-1ae7-460e-b760-54cb0ae4a64c
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 91f2ce98-6bed-43ae-857c-fdd32c37920e
+      m_Path: <XRSimulatedController>{LeftHand}/trigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Trigger
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 472bd781-d29e-495b-bcb6-26da72f8379d
+      m_Path: <Mouse>/rightButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Trigger
+      m_Flags: 0
     m_Flags: 0
   leftPrimary:
     m_Name: Left Primary
@@ -1386,7 +1450,23 @@ MonoBehaviour:
     m_Id: 962aa748-4219-4b8e-948e-8a929b40eaa5
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c5bed0ca-d1cd-4dbc-9522-69321c14856d
+      m_Path: <XRController>{LeftHand}/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Primary
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 21b7d2df-3e47-41b1-abc7-73eae1b7be74
+      m_Path: <Keyboard>/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Primary
+      m_Flags: 0
     m_Flags: 0
   leftSecondary:
     m_Name: Left Secondary
@@ -1395,7 +1475,23 @@ MonoBehaviour:
     m_Id: 0303d6d4-6ae8-4a5b-bae5-c06962ac086c
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 3b66ee74-9f34-4eb9-a8fb-de24bce37d59
+      m_Path: <XRController>{LeftHand}/secondaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Secondary
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 3dcfee23-26df-48bd-9e64-04d9e4b8a20b
+      m_Path: <Keyboard>/y
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Secondary
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &98527914
 MonoBehaviour:
@@ -1409,7 +1505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b146833bbd5ce49be295061059cd9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  camera: {fileID: 7838701158216993210}
 --- !u!1 &7838701159691597582
 GameObject:
   m_ObjectHideFlags: 0
