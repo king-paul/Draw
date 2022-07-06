@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         audio = GetComponent<AudioSource>();
 
         shotsLeft = maxShots;
-        //ammoValue.text = shotsLeft.ToString();
+        ammoValue.text = shotsLeft.ToString();
     }
 
     // Update is called once per frame
