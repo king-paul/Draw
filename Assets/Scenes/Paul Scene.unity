@@ -238,66 +238,10 @@ PrefabInstance:
       propertyPath: onBButton.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 938094364}
-    - target: {fileID: 793938202148004554, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 793938202148004557, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3872508827444308401, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: crosshair
-      value: 
-      objectReference: {fileID: 1004728971}
     - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 938094364}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: ricochetSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: ricochetSounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8a3de3e1f5d72ac4cb77b8d8526a85e0, type: 3}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: ricochetSounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2996df75228a2e84aadd3758e44c106c, type: 3}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: ricochetSounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 35444784a7c70324fbed35fbaccda291, type: 3}
-    - target: {fileID: 5164195802359315460, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7838701159199260048, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Name
       value: XR Origin
@@ -824,11 +768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c6078bbbfc1e043b7416c112c086e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1004728971 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2832285379617102089, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-  m_PrefabInstance: {fileID: 296654476}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1149076804
 PrefabInstance:
   m_ObjectHideFlags: 0

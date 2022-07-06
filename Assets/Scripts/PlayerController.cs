@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform revolver;
     public Transform tommahawk;
     public Transform crosshair;
+    public Transform firingPoint;
     public TextMeshProUGUI ammoValue;
 
     //public GameObject fireIndicator;
@@ -41,6 +42,8 @@ public class PlayerController : MonoBehaviour
 
     private LineRenderer line;
     private AudioSource audio;
+
+    private Vector3 offset = new Vector3(0, 0, 5);
 
     // Start is called before the first frame update
     void Start()
@@ -75,7 +78,7 @@ public class PlayerController : MonoBehaviour
         if (fireFromCamera)
             fireOrigin = camera.transform;
         else
-            fireOrigin = revolver;
+            fireOrigin = firingPoint;
 
         if (showLineRenderer)
         {
