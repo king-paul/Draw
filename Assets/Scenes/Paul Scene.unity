@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7838701159110744303, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 5622239393649482366, guid: 7148baf22384d42419a643474977e414, type: 3}
     - target: {fileID: 7838701159199260048, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Name
       value: XR Origin

@@ -5,12 +5,12 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(AudioSource))]
 public class MeleeWeapon : MonoBehaviour
-{
+{    
+    [SerializeField] Vector3 offset = new Vector3(0, 0, 1);
+
     AudioSource audio;
     GameObject manager;
-    GameManager gameManager;
-
-    [SerializeField] Vector3 offsetFromCamera = new Vector3(0, 0, -1);
+    GameManager gameManager;    
 
     private void Awake()
     {
@@ -19,6 +19,11 @@ public class MeleeWeapon : MonoBehaviour
 
         if(manager != null)
             gameManager = manager.GetComponent<GameManager>();        
+    }
+
+    private void Start()
+    {
+        transform.position = offset;
     }
 
     private void OnCollisionEnter(Collision collision)
