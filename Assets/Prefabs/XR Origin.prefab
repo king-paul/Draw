@@ -605,7 +605,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7838701158324812623}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7838701159110744212}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -1674,10 +1674,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    - target: {fileID: 6446132584828801313, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1724,7 +1720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1744,11 +1740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.077
       objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6446132584828801315, guid: d3f821c02d1c2834e9d2e5a900bdc500, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1822,6 +1818,18 @@ PrefabInstance:
     - target: {fileID: 5442289708732079898, guid: 11581b1a4377b1e42b0e139cc8f46ee8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 389.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442289708732079898, guid: 11581b1a4377b1e42b0e139cc8f46ee8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442289708732079898, guid: 11581b1a4377b1e42b0e139cc8f46ee8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442289708732079898, guid: 11581b1a4377b1e42b0e139cc8f46ee8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5442289708732079898, guid: 11581b1a4377b1e42b0e139cc8f46ee8, type: 3}
       propertyPath: m_LocalPosition.x
