@@ -398,22 +398,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098eb03cde8c6be44aa45faa1cd941b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onLeftClick:
+  lockMouseCursor: 1
+  onLeftTriggerPressed:
     m_PersistentCalls:
       m_Calls: []
-  onRightClick:
+  onLeftTriggerReleased:
     m_PersistentCalls:
       m_Calls: []
-  onLeftTiggerPressed:
+  onRightTriggerPressed:
     m_PersistentCalls:
       m_Calls: []
-  onLeftTiggerReleased:
-    m_PersistentCalls:
-      m_Calls: []
-  onRightTiggerPressed:
-    m_PersistentCalls:
-      m_Calls: []
-  onRightTiggerReleased:
+  onRightTriggerReleased:
     m_PersistentCalls:
       m_Calls: []
   onAButton:
@@ -434,24 +429,13 @@ MonoBehaviour:
   onBButton:
     m_PersistentCalls:
       m_Calls: []
-  fireInput:
-    m_Name: Fire Input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: effe809a-ec4c-45e6-b1f3-2197c1efb5ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c1215fd6-8762-4b93-b329-88419810010f
-      m_Path: <XRController>{RightHand}/triggerPressed
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Fire Input
-      m_Flags: 0
-    m_Flags: 0
-  fireRelease:
+  onXButton:
+    m_PersistentCalls:
+      m_Calls: []
+  onYButton:
+    m_PersistentCalls:
+      m_Calls: []
+  rightTrigger:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
@@ -460,39 +444,50 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  selectInput:
-    m_Name: Select Input
+  rightPrimary:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: d028137a-114a-4b56-9516-732035c00fbd
+    m_Id: 
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 01d7db01-d30d-40a7-8e67-7d1db5319b7c
-      m_Path: <XRController>{RightHand}/primaryButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Select Input
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
-  pauseInput:
-    m_Name: Pause Input
+  rightSecondary:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 49483626-37a5-4f82-988c-91c59749b385
+    m_Id: 
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 373ac7b4-847a-46c6-a923-41b5c02a2d9b
-      m_Path: <XRController>/secondaryButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pause Input
-      m_Flags: 0
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftTrigger:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftPrimary:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftSecondary:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
     m_Flags: 0
 --- !u!4 &790460527
 Transform:
@@ -526,6 +521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
+  titleMusicLoop: {fileID: 0}
+  playTitleMusic: 0
 --- !u!224 &1195508860 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6810340656079697433, guid: 3eba3f775b95052458707ba8b6e17045, type: 3}
@@ -1232,6 +1229,7 @@ GameObject:
   - component: {fileID: 1345035734139271504}
   - component: {fileID: 6239719182241225097}
   - component: {fileID: 6239719182268044877}
+  - component: {fileID: 1345035734139271506}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1239,6 +1237,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!82 &1345035734139271506
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345035734139271505}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e46316a7e4c2dcd4bb7ce16c93da59ff, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1345035734139271507
 Transform:
   m_ObjectHideFlags: 0
@@ -2173,22 +2267,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098eb03cde8c6be44aa45faa1cd941b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onLeftClick:
+  lockMouseCursor: 1
+  onLeftTriggerPressed:
     m_PersistentCalls:
       m_Calls: []
-  onRightClick:
+  onLeftTriggerReleased:
     m_PersistentCalls:
       m_Calls: []
-  onLeftTiggerPressed:
+  onRightTriggerPressed:
     m_PersistentCalls:
       m_Calls: []
-  onLeftTiggerReleased:
-    m_PersistentCalls:
-      m_Calls: []
-  onRightTiggerPressed:
-    m_PersistentCalls:
-      m_Calls: []
-  onRightTiggerReleased:
+  onRightTriggerReleased:
     m_PersistentCalls:
       m_Calls: []
   onAButton:
@@ -2197,81 +2286,65 @@ MonoBehaviour:
   onBButton:
     m_PersistentCalls:
       m_Calls: []
-  fireInput:
-    m_Name: Fire Input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 92a3a118-7e82-419a-86be-a866ca1d887d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c1f266bd-ea64-411f-be1e-6b6da8bfa3b5
-      m_Path: <XRController>{RightHand}/triggerPressed
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Fire Input
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 103d5593-2957-4d83-b329-59dbc211e12b
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Fire Input
-      m_Flags: 0
-    m_Flags: 0
-  fireRelease:
+  onXButton:
+    m_PersistentCalls:
+      m_Calls: []
+  onYButton:
+    m_PersistentCalls:
+      m_Calls: []
+  rightTrigger:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: 99262954-3ed7-42e1-8aa5-4d1549739100
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
-  selectInput:
-    m_Name: Select Input
+  rightPrimary:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 5a4fe387-ee4a-4b0a-91ad-2ca2f83f4e4e
+    m_Id: 03761814-cea6-4273-8d30-395a02038d89
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 384708fe-3cea-4c1b-8cb3-8618aa2dc038
-      m_Path: <XRController>{RightHand}/primaryButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Select Input
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
-  pauseInput:
-    m_Name: Pause Input
+  rightSecondary:
+    m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: e2ae2894-e766-4317-9a32-cb4145365be0
+    m_Id: d7fabaa4-1a58-4b44-8224-4627c9b88671
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 1f91524b-8392-4fab-a571-73dba2d46c29
-      m_Path: <XRController>{RightHand}/secondaryButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pause Input
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 63362353-7c7e-448f-b336-b59588036323
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pause Input
-      m_Flags: 0
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftTrigger:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 61582721-fa58-4f3e-b0fd-accb8dbd53d3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftPrimary:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f694bd61-19c7-4e1e-af62-2959d4fa57ce
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  leftSecondary:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e4452446-ecc9-4606-a30c-59434a3a59d3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
     m_Flags: 0
 --- !u!114 &6239719182268044877
 MonoBehaviour:
@@ -2286,3 +2359,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1345035734474849812}
+  titleMusicLoop: {fileID: 8300000, guid: 0eb9232c8126250479beeff234e48ca0, type: 3}
+  playTitleMusic: 1

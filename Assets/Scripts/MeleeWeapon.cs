@@ -7,12 +7,16 @@ using UnityEngine;
 public class MeleeWeapon : MonoBehaviour
 {
     AudioSource audio;
+    GameObject manager;
     GameManager gameManager;
 
     private void Awake()
     {
         audio = GetComponent<AudioSource>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();        
+        manager = GameObject.Find("GameManager");
+
+        if(manager != null)
+            gameManager = manager.GetComponent<GameManager>();        
     }
 
     private void OnCollisionEnter(Collision collision)

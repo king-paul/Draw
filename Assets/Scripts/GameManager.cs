@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
     [Range(1, 10)]
     [SerializeField] int startingLives = 5;
     [Range(1, 1000)]
-    [SerializeField] int pointsPerLevel = 500;    
+    [SerializeField] int pointsPerLevel = 500;
     [SerializeField] ObjectSpawner[] spawners;
 
     [Header("% Adjustments Per level")]
-    [Range(0,100)]
+    [Range(0, 100)]
     [SerializeField] float objectSpeedIncrease = 3.0f;
     [Range(0, 100)]
     [SerializeField] float fireRateIncrease = 3.0f;
@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour
     [Header("Pause Menu")]
     public GameObject menuGUI;
 
-    [Header("Sound Effects")]
+    [Header("Sounds")]
+    public AudioClip musicLoop;
     public AudioClip progressLevelSound;
     public AudioClip gameOverSound;
     public AudioClip level3Sound;
@@ -40,12 +41,14 @@ public class GameManager : MonoBehaviour
     [Header("Device Simulation")]
     public GameObject xrSimulator;
 
-    private AudioSource audio;
+    private AudioSource soundEffects;
+    private AudioSource music;
+    private AudioSource ambience;
 
     private int lives;
     private int score = 0;
     private int level = 1;
-    private int levelPoints; // number of points since the last level
+    private int levelPoints; // number of points since the last level    
 
     public bool GameRunning { get; private set; }
 
@@ -60,7 +63,11 @@ public class GameManager : MonoBehaviour
             GameRunning = true;
         }
 
-        audio = GetComponent<AudioSource>();
+        var audio = GetComponents<AudioSource>();
+        soundEffects = audio[0];
+        music = audio[1];
+        ambience = audio[2];
+
 
 #if UNITY_EDITOR
         xrSimulator.SetActive(true);
@@ -76,14 +83,22 @@ public class GameManager : MonoBehaviour
         levelText.text = level.ToString();
         scoreText.text = score.ToString();
         livesText.text = lives.ToString();
+
+        if (GameRunning && music != null && !music.isPlaying)
+        {
+            music.clip = musicLoop;
+            music.loop = true;
+            music.Play();
+        }
+
     }
-    
+
     public void AddPoints(int amount)
     {
         score += amount;
         levelPoints += amount;
 
-        if(levelPoints >= pointsPerLevel)
+        if (levelPoints >= pointsPerLevel)
             IncreaseLevel();
     }
     public void IncreaseLevel()
@@ -98,16 +113,16 @@ public class GameManager : MonoBehaviour
         }
 
         // play level up sound
-        if (audio != null)
+        if (soundEffects != null)
         {
             if (level == 3 && level3Sound != null)
-                audio.PlayOneShot(level3Sound);
+                soundEffects.PlayOneShot(level3Sound);
             else if (level == 6 && level6Sound != null)
-                audio.PlayOneShot(level6Sound);
+                soundEffects.PlayOneShot(level6Sound);
             else if (level == 9 && level9Sound != null)
-                audio.PlayOneShot(level9Sound);
+                soundEffects.PlayOneShot(level9Sound);
             else if (progressLevelSound != null)
-                audio.PlayOneShot(progressLevelSound);
+                soundEffects.PlayOneShot(progressLevelSound);
         }
     }
 
@@ -119,8 +134,15 @@ public class GameManager : MonoBehaviour
         {
             gameOverText.gameObject.SetActive(true);
 
-            if (audio != null && gameOverSound != null)
-                audio.PlayOneShot(gameOverSound);
+            if (music != null && gameOverSound != null)
+            {
+                music.Stop();                
+                music.loop = false;
+                music.clip = gameOverSound;
+                music.Play();
+
+                ambience.Stop();
+            }
 
             GameRunning = false;
             Time.timeScale = 0;
@@ -154,17 +176,17 @@ public class GameManager : MonoBehaviour
 
     public void PlayRandomSpeech()
     {
-        if(speeches.Length > 0)
+        if (speeches.Length > 0)
         {
             float chance = Random.value;
-            Debug.Log("Random value: " + chance);
+            //Debug.Log("Random value: " + chance);
 
             if (chance <= speechFrequency)
             {
                 int randomSpeech = Random.Range(0, speeches.Length);
-                audio.PlayOneShot(speeches[randomSpeech]);
+                soundEffects.PlayOneShot(speeches[randomSpeech]);
             }
-        }        
+        }
 
     }
 
@@ -172,7 +194,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Enemy");
 
-        foreach(GameObject projectile in projectiles)
+        foreach (GameObject projectile in projectiles)
         {
             projectile.GetComponent<Renderer>().enabled = visible;
         }

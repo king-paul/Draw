@@ -262,21 +262,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 37
       objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315458, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_Height
+      value: 3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164195802359315458, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_Radius
+      value: 0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315459, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315461, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1371,6 +1379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1920584268}
     - target: {fileID: 2716104267198978602, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
+      propertyPath: musicLoop
+      value: 
+      objectReference: {fileID: 8300000, guid: a050ca34c40340f45afb032b2ecd2580, type: 3}
+    - target: {fileID: 2716104267198978602, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 881073030}
@@ -1433,6 +1445,14 @@ PrefabInstance:
     - target: {fileID: 2716104267198978605, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861482300275214592, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185215717090390812, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
+      propertyPath: m_Volume
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 932bbfed8034b8f4292d1c8343976922, type: 3}
