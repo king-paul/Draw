@@ -1,50 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3318190029220730378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2686191486881598640}
-  - component: {fileID: 89899432010275841}
-  m_Layer: 0
-  m_Name: Env_Barrel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2686191486881598640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3318190029220730378}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1180910774798781673}
-  m_Father: {fileID: 4162535462164360324}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &89899432010275841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3318190029220730378}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7580435, y: 0.9262705, z: 1.1563864}
-  m_Center: {x: 3.9970293, y: -2.0717888, z: -3.0831032}
 --- !u!1 &3609096815803756012
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,6 +11,7 @@ GameObject:
   - component: {fileID: 1180910774798781673}
   - component: {fileID: 5906293891648597346}
   - component: {fileID: 1536420039246856991}
+  - component: {fileID: 1332847160771549984}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -70,11 +26,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3609096815803756012}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -2.0875452, z: -2.932899}
-  m_LocalScale: {x: 0.31479588, y: 0.4324995, z: 0.31479588}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
-  m_Father: {fileID: 2686191486881598640}
+  m_Father: {fileID: 4162535462164360324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5906293891648597346
@@ -126,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1332847160771549984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609096815803756012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0856676, y: 1.8823904, z: 2.1219482}
+  m_Center: {x: 0.015008715, y: -0.00000013781437, z: 0.007977812}
 --- !u!1 &4162535462164360323
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +127,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2686191486881598640}
+  - {fileID: 1180910774798781673}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -335,9 +304,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5f1b11f4493694bbfac269584b95cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsWhenDestroyed: 20
-  canBeShot: 1
-  destroyedByMelee: 1
+  pointsWhenDestroyed: 0
+  canBeShot: 0
+  destroyedByMelee: 0
   spawnSound: {fileID: 8300000, guid: 65d2758111c9248498955da62ccf6d70, type: 3}
-  destroySound: {fileID: 8300000, guid: 76a98dadf8c82654a8018f7c774c5dfc, type: 3}
-  speed: 1
+  destroySound: {fileID: 8300000, guid: 7c7255b7ecef9764ba1d2e58cb3902bc, type: 3}
+  speed: 0.3

@@ -1615,10 +1615,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2832285379617102089}
     - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
-      propertyPath: tommahawk
-      value: 
-      objectReference: {fileID: 7838701159110744299}
-    - target: {fileID: 836324044930659407, guid: e57b940421926264784c9b121edb3967, type: 3}
       propertyPath: firingPoint
       value: 
       objectReference: {fileID: 8335240213204777264}

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2480620319409849022}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 4162535462164360324}
   m_RootOrder: 0
@@ -93,7 +93,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -251502244492782850, guid: 724336ee5644e7540acc42a5e6647d58, type: 3}
 --- !u!1 &4162535462164360323
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsWhenDestroyed: 20
   canBeShot: 1
-  destroyedByMelee: 1
+  destroyedByMelee: 0
   spawnSound: {fileID: 8300000, guid: 65d2758111c9248498955da62ccf6d70, type: 3}
   destroySound: {fileID: 8300000, guid: 76a98dadf8c82654a8018f7c774c5dfc, type: 3}
-  speed: 1
+  speed: 0.5

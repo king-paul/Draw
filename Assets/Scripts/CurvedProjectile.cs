@@ -5,7 +5,7 @@ using UnityEngine;
 public class CurvedProjectile : Projectile
 {
     [Header("Curved Motion Properties")]
-    [SerializeField]
+    [SerializeField][Range(0.01f, 1)]
     protected float speed = 1;
 
     public float ThrowHeight { get; set; }
