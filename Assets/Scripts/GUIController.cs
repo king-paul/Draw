@@ -5,12 +5,10 @@ using UnityEngine.UI;
 
 public class GUIController : MonoBehaviour
 {
-    //public Transform camera;
-    //public Transform leftController;
     public Transform rightController;
-    //public Transform leftFiringPoint;
+    public Transform leftFiringPoint;
     public Transform rightFiringPoint;
-    //public Transform leftCursor;
+    public Transform leftCursor;
     public Transform rightCursor;
     [SerializeField] float maxCastDiscatance = 50f;
     public LineRenderer line;
@@ -38,10 +36,11 @@ public class GUIController : MonoBehaviour
             audio.loop = true;
             audio.Play();
         }
-
+        
         // draw line renderer
         line.SetPosition(0, rightFiringPoint.position);
-
+        //line.SetPosition(1, rightCursor.position);
+        
         Vector3 fireDirection = (rightCursor.position - rightFiringPoint.position).normalized;
         if (Physics.Raycast(rightController.position, fireDirection, out hit))
         {
@@ -68,6 +67,21 @@ public class GUIController : MonoBehaviour
                 hit.transform.GetComponent<VRButton>().Activate();
             }
             
+        }
+    }
+
+    public void RaycastFromLeft()
+    {
+        Vector3 fireDirection = (leftCursor.position - leftFiringPoint.position).normalized;
+
+        if (Physics.Raycast(leftFiringPoint.position, fireDirection, out hit, maxCastDiscatance))
+        {
+            if (hit.transform.gameObject.layer == 5)  // 5 = UI Layer
+            {
+                Debug.Log("Clicked on " + hit.transform.name);
+                hit.transform.GetComponent<VRButton>().Activate();
+            }
+
         }
     }
 
