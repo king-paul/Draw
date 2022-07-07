@@ -273,7 +273,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 1085516558444204243, guid: 96c17cf9e7a03a540bbc9884f6afd11c, type: 3}
+  m_ModelPrefab: {fileID: 3526743177502594536, guid: d46c63ba46d4a854e916fcdcceef21da, type: 3}
   m_ModelParent: {fileID: 7838701158324812622}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 4149444341506915341, guid: 14cb863b172636c499aca1e121ed2d96, type: 3}
+  m_ModelPrefab: {fileID: 7341561056647784448, guid: ac1b0b79b64039c43bfc0bfabd777dc9, type: 3}
   m_ModelParent: {fileID: 7838701159110744299}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1698,10 +1698,6 @@ PrefabInstance:
     - target: {fileID: 7479365977608507242, guid: 390efeb0ace7d7244843361f119d4a33, type: 3}
       propertyPath: m_Name
       value: Canvas-Pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 7479365977608507242, guid: 390efeb0ace7d7244843361f119d4a33, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7479365977608507245, guid: 390efeb0ace7d7244843361f119d4a33, type: 3}
       propertyPath: m_Pivot.x
