@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8152012885786784735
+--- !u!1 &4993898647056744644
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8152012885786784734}
-  - component: {fileID: 8152012885786784731}
-  - component: {fileID: 8152012885786784728}
-  - component: {fileID: 8152012885786784729}
-  - component: {fileID: 270485019471249350}
-  - component: {fileID: 836324044930659407}
+  - component: {fileID: 5622239393649482366}
+  - component: {fileID: 8766801369049880027}
+  - component: {fileID: 6795113991651762449}
+  - component: {fileID: -4903687357656360348}
+  - component: {fileID: -9191439212991333499}
+  - component: {fileID: 8428425282859858589}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
+  m_Name: Tomahawk
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8152012885786784734
+--- !u!4 &5622239393649482366
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 4993898647056744644}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8152012885786784731
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &8766801369049880027
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8152012885786784728
+  m_GameObject: {fileID: 4993898647056744644}
+  m_Mesh: {fileID: 7091500709883988191, guid: 64b8fc03611a4634fa0be523b0056c71, type: 3}
+--- !u!23 &6795113991651762449
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
-  m_Enabled: 0
+  m_GameObject: {fileID: 4993898647056744644}
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -4579004277273815475, guid: 64b8fc03611a4634fa0be523b0056c71, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,31 +84,30 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8152012885786784729
-CapsuleCollider:
+--- !u!65 &-4903687357656360348
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
+  m_GameObject: {fileID: 4993898647056744644}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &270485019471249350
+  serializedVersion: 2
+  m_Size: {x: 2.3073514, y: 15.73132, z: 4.19467}
+  m_Center: {x: 0.019776402, y: 36.640812, z: 14.21922}
+--- !u!82 &-9191439212991333499
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
+  m_GameObject: {fileID: 4993898647056744644}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44112670b9c1eca4caf1fc0158664a36, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -194,34 +193,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &836324044930659407
+--- !u!114 &8428425282859858589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8152012885786784735}
+  m_GameObject: {fileID: 4993898647056744644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d9608acc0cfbba47a3e591f497501e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 046759b06886a2343bc618b835d28882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  revolver: {fileID: 0}
-  leftController: {fileID: 0}
-  crosshair: {fileID: 0}
-  firingPoint: {fileID: 0}
-  ammoValue: {fileID: 0}
-  gameManager: {fileID: 0}
-  maxShots: 6
-  reloadTime: 3
-  fireFromCamera: 0
-  showLineRenderer: 1
-  gunShotSound: {fileID: 8300000, guid: 1139c179e265406409e3fa31b8ab17ed, type: 3}
-  reloadSound: {fileID: 8300000, guid: 168f2e0af8e227c429079ab8f134e8a8, type: 3}
-  ricochetSounds:
-  - {fileID: 8300000, guid: 8a3de3e1f5d72ac4cb77b8d8526a85e0, type: 3}
-  - {fileID: 8300000, guid: 2996df75228a2e84aadd3758e44c106c, type: 3}
-  - {fileID: 8300000, guid: 35444784a7c70324fbed35fbaccda291, type: 3}
-  dieSound: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}
-  offsetFromCamera: {x: 0, y: 3, z: -1}
+  offset: {x: 0, y: 0, z: 0}

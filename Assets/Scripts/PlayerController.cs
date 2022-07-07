@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     public Camera camera;
     public Transform revolver;
-    public Transform tommahawk;
+    public Transform leftController;
     public Transform crosshair;
     public Transform firingPoint;
     public TextMeshProUGUI ammoValue;
@@ -55,12 +55,16 @@ public class PlayerController : MonoBehaviour
 
         shotsLeft = maxShots;
         ammoValue.text = shotsLeft.ToString();
+
+        //Debug.Log(leftController.childCount);
+            //.GetChild(2).transform.position = Vector3.zero;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.DrawLine(camera.position, camera.position + camera.forward * 50, Color.blue);                
+        //Debug.DrawLine(camera.position, camera.position + camera.forward * 50, Color.blue);        
+        
 
         transform.position = new Vector3(camera.transform.position.x + offsetFromCamera.x,
             offsetFromCamera.y, camera.transform.position.z + offsetFromCamera.z);

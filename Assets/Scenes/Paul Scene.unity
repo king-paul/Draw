@@ -258,21 +258,13 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 938094364}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: offsetFromCamera.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
-      propertyPath: offsetFromCamera.z
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 4888271393055655443, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315458, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Height
-      value: 3.97
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5164195802359315458, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Radius
@@ -306,6 +298,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7838701158216993210, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838701159110744303, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 5622239393649482366, guid: 7148baf22384d42419a643474977e414, type: 3}
     - target: {fileID: 7838701159199260048, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_Name
       value: XR Origin
@@ -353,6 +353,10 @@ PrefabInstance:
     - target: {fileID: 7838701159199260054, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838701159691597581, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
