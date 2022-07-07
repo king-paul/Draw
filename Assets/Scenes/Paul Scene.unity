@@ -259,6 +259,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 938094364}
     - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
+      propertyPath: leftController
+      value: 
+      objectReference: {fileID: 7341561056647784448, guid: ac1b0b79b64039c43bfc0bfabd777dc9, type: 3}
+    - target: {fileID: 4400039334938377108, guid: ccef61742411f0b43ab3105fdd764164, type: 3}
       propertyPath: offsetFromCamera.y
       value: 2.5
       objectReference: {fileID: 0}
@@ -1358,7 +1362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597572365520851926, guid: 61de4f0c5465fcf449e9d48d37e8657c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 597572365520851927, guid: 61de4f0c5465fcf449e9d48d37e8657c, type: 3}
       propertyPath: player
