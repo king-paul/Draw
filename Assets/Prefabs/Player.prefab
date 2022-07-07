@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   revolver: {fileID: 0}
-  tommahawk: {fileID: 0}
+  leftController: {fileID: 0}
   crosshair: {fileID: 0}
   firingPoint: {fileID: 0}
   ammoValue: {fileID: 0}
@@ -224,4 +224,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2996df75228a2e84aadd3758e44c106c, type: 3}
   - {fileID: 8300000, guid: 35444784a7c70324fbed35fbaccda291, type: 3}
   dieSound: {fileID: 8300000, guid: 83cffa1736f8a9b4a8be4b925dd0f5ed, type: 3}
-  offsetFromCamera: {x: 0, y: -2, z: 0}
+  offsetFromCamera: {x: 0, y: 3, z: -1}

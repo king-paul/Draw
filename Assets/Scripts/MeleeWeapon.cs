@@ -23,7 +23,7 @@ public class MeleeWeapon : MonoBehaviour
 
     private void Start()
     {
-        transform.position = offset;
+        transform.localPosition = offset;
     }
 
     private void OnCollisionEnter(Collision collision)
